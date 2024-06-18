@@ -1,0 +1,48 @@
+1. React JS
+	a. Client side UI development library
+	b. SPA
+	c. React JS frameworks: Next JS, Gatsby etc. 
+	d. React JS uses Virtual DOM
+
+2. create-react-app tool
+
+
+in React Component's design only one root react element can be present
+
+JavaScript or TypeScript XML
+with JSX/TSX:
+const headerElement: JSX.Element = (
+        <h2 id= "mainHeader" style = { styleObj }>
+            <span>{ message } </span>
+            <span> { messageNext } </span>
+        </h2>
+    )
+
+without JSX/TSX:
+import { createElement } from "react"
+    const spanFirstElement = createElement(
+        'span',
+        {},
+        message
+    )
+    const spanSecondElement = createElement(
+        'span',
+        {},
+        messageNext
+    )
+    const headerElement = createElement(
+        'h2',
+        {
+            id: 'mainHeader',
+            style: { styleObj }
+        },
+        [spanFirstElement, spanSecondElement]
+    )
+    
+
+with JSX/TSX
+
+components:
+	a. functional: presentational/ stateless
+	b. class: stateful
+

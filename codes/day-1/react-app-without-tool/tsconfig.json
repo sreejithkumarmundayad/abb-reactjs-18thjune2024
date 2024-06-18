@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "rootDir": "src",
+    "outDir": "dist",
+    "target": "ES5",
+    "module": "AMD",
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "moduleResolution": "Node",
+    "jsx": "react-jsx",
+    "lib": [
+      "DOM",
+      "ES2022"
+    ]
+  },
+  "exclude": [
+    "node_modules"
+  ]
+}
