@@ -46,3 +46,5 @@ components:
 	a. functional: presentational/ stateless
 	b. class: stateful
 
+pass data from parent to nested: using property object (props) and data binding
+pass data from nested to parent: use event and event binding
