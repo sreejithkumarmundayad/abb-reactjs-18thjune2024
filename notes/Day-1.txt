@@ -48,3 +48,12 @@ components:
 
 pass data from parent to nested: using property object (props) and data binding
 pass data from nested to parent: use event and event binding
+
+Hooks => React JS APIs which provide same facilities in the functional component which are available with class component (such as- state, lifecyle etc.)
+state hook => 
+	useState()
+	const arr = useState<number>(0)
+	const valueState =	arr[0]
+	const setValueState = arr[1]
+
+	const [valueState, setValueState]= useState<number>(0)

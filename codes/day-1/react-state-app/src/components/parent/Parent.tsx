@@ -1,19 +1,21 @@
+import { useState } from "react"
 import Nested from "../nested/Nested"
 
 const Parent = () => {
     console.log('parent rendered');
-    let data = 0
+
+    const [data, setData] = useState<number>(0)
+
     const dataHandler = () => {
-        data += 1
-        console.log(data);
+        setData(100)
     }
     return (
         <div>
             <Nested
                 value={data}
-                valueHandler={dataHandler} />
+                valueHandler={dataHandler}
+            />
         </div>
     )
 }
-
 export default Parent

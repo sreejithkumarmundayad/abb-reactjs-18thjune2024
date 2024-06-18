@@ -1,0 +1,36 @@
+import { Component } from "react"
+import Nested from "../nested/Nested"
+
+type ParentStateType = {
+     data: number,
+     name: string
+ }
+ //class Name extends Component<PropType,StateType>
+//class Parent extends Component<
+//     Readonly<any>, Readonly<ParentStateType>>
+
+class Parent extends Component {
+
+    state: Readonly<ParentStateType> = {
+        data: 0,
+        name: ''
+    };
+    dataHandler = () => {
+        //state should not be mutated directly
+        //this.state.data += 1
+        this.setState({
+            data: 100
+        })
+    }
+    render(): ReactNode {
+        console.log('parent rendered');
+        return (
+            <div>                
+                <Nested
+                    value={this.state.data}
+                    valueHandler={this.dataHandler}
+                />
+            </div >
+        )
+    }
+}
